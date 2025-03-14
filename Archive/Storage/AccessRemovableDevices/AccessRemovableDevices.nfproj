@@ -26,28 +26,33 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="mscorlib">
-      <HintPath>..\packages\nanoFramework.CoreLibrary.1.15.5\lib\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="nanoFramework.Runtime.Events, Version=1.11.18.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
-      <HintPath>..\packages\nanoFramework.Runtime.Events.1.11.18\lib\nanoFramework.Runtime.Events.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="nanoFramework.System.Runtime">
-      <HintPath>..\packages\nanoFramework.System.Runtime.1.0.6\lib\nanoFramework.System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="nanoFramework.System.Text">
-      <HintPath>..\packages\nanoFramework.System.Text.1.2.54\lib\nanoFramework.System.Text.dll</HintPath>
-    </Reference>
-    <Reference Include="Windows.Storage">
-      <HintPath>..\packages\nanoFramework.Windows.Storage.1.5.49\lib\Windows.Storage.dll</HintPath>
-    </Reference>
-    <Reference Include="Windows.Storage.Streams">
-      <HintPath>..\packages\nanoFramework.Windows.Storage.Streams.1.14.32\lib\Windows.Storage.Streams.dll</HintPath>
-    </Reference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Reference Include="mscorlib, Version=1.17.7.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.CoreLibrary.1.17.7\lib\mscorlib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nanoFramework.Runtime.Events, Version=1.11.31.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.Runtime.Events.1.11.31\lib\nanoFramework.Runtime.Events.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nanoFramework.System.Runtime, Version=1.0.28.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.System.Runtime.1.0.28\lib\nanoFramework.System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nanoFramework.System.Text, Version=1.3.36.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.System.Text.1.3.36\lib\nanoFramework.System.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Windows.Storage, Version=1.5.62.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.Windows.Storage.1.5.62\lib\Windows.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Windows.Storage.Streams, Version=1.14.44.0, Culture=neutral, PublicKeyToken=c07d481e9758c731">
+      <HintPath>..\packages\nanoFramework.Windows.Storage.Streams.1.14.44\lib\Windows.Storage.Streams.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>
